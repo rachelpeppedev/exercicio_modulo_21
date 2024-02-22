@@ -41,6 +41,14 @@ body {
 
 .text--big {
     @include text(18px);
+
+    @media (max-width: 767px) {
+        @include text(16px);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @include text(18px);
+    }
 }
 
 .text {
@@ -49,6 +57,10 @@ body {
 
 .text--small {
     @include text(12px);
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @include text(14px);
+    }
 }
 
 .title--big {

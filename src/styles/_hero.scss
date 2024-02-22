@@ -5,10 +5,26 @@
     justify-content:center;        
     flex-direction:column;    
     position: relative;
+
+    &__capa {
+        max-width: 100%;
+        opacity: 0.6;
+    }
     
     &__start {
         position:absolute;
-        padding-left:100px;   
+        padding-left: 100px;
+        
+
+        @media (max-width: 767px) {
+            padding-left: 60px;
+        }
+        
+        &__logo {            
+            @media (max-width: 767px) {
+                max-width: 250px;
+            }
+        }
         }
     }        
 
