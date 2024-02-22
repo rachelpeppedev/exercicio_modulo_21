@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.header {
+    background-color: variaveis.$cordeFundo; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;    
+
+    &__container {
+        padding: 10px 36px;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;  
+        }
+
+    &__logo {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    &__button {        
+        height: 50px;
+        font-size: 20px;        
+        color: variaveis.$cordoTexto;
+        background-color: variaveis.$corBotao;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 8px 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;               
+
+        &:hover {
+            background-color: lighten(variaveis.$corBotao, 5%);            
+        }
+    }
+}

@@ -1,14 +1,14 @@
-.hero {   
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;        
-    flex-direction: column;
-    opacity: 0.8;
+.hero {     
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;        
+    flex-direction:column;    
     position: relative;
-
-    &__start  {
-        position: absolute;
-        padding-left: 100px;
+    
+    &__start {
+        position:absolute;
+        padding-left:100px;   
         }
-    }
+    }        
+

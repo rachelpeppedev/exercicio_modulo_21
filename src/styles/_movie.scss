@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.movie {
+    padding: 2vw 5.6vw;
+
+    &__summary {
+        margin-top: 20px;
+        &__description {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            .p {
+                text-align: justify;
+            }
+        }
+    }
+    &__about {
+        &__button {
+            color: variaveis.$cordoTexto;
+            font-size: 20px;
+            border: none;
+            border-bottom: 5px solid variaveis.$cordoTexto;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase; 
+        }
+    }
+
+    &__detail { 
+        margin-top: 12px;      
+        &__list {            
+            display: flex;
+            gap: 10px;
+            list-style:none;                                   
+        }
+    }
+}

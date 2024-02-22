@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.cast {
+    padding: 2vw 5.6vw;
+        
+    &__list {
+        margin-top: 40px;
+        display: flex; 
+        text-align: center;
+        gap: 10px;       
+        
+        &__item {           
+            list-style: none;
+
+            img {
+                max-width: 100%;
+                height: 200px;
+                width: 200px; 
+                border-radius: 5px;                                             
+            }
+        }
+    }
+
+    &__tabs {
+        &__button {
+            color: variaveis.$cordoTexto;
+            font-size: 20px;
+            border: none;
+            border-bottom: 5px solid variaveis.$cordoTexto;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+        }
+    }
+}

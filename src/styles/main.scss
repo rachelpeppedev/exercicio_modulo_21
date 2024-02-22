@@ -1,4 +1,9 @@
 @use 'hero';
+@use 'cast';
+@use 'variaveis';
+@use 'movie';
+@use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -15,27 +20,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box; 
+    font-family: Avenir, sans-serif;   
 }
 
-$cordeFundo: rgb(193, 200, 235);
-$cordoTexto: #fff;
-
-body {
-    font-family: Avenir, sans-serif;
-    background-color: $cordeFundo;
+body {    
+    background-color: variaveis.$cordeFundo;
 }
-
 
 @mixin text ($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $cordoTexto;
+    color: variaveis.$cordoTexto;
 }
 
 @mixin title ($fontSize: 40px) {
     @include text($fontSize);
-    color: $cordoTexto;
+    color: variaveis.$cordoTexto;
 }
 
 .text--big {
